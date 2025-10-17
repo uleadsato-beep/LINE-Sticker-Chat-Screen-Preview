@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEスタンプ プレビューツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>LINEスタンプ プレビューツール</h1>
+        <p>スタンプがトーク画面でどう見えるか確認できます。</p>
+        
+        <div class="controls">
+            <div class="role-switcher">
+                <span id="role-label-partner">相手として送信</span>
+                <label class="switch">
+                    <input type="checkbox" id="role-switch" checked>
+                    <span class="slider"></span>
+                </label>
+                <span id="role-label-me" class="active">自分として送信</span>
+            </div>
+
+            <button id="select-image-btn">スタンプを追加</button>
+            <input type="file" id="image-input" accept="image/*" style="display: none;">
+        </div>
+        <p class="note">※画像はどこにもアップロードされません。全てブラウザ内で完結します。</p>
+
+        <div class="smartphone">
+            <div class="screen">
+                <header class="chat-header">
+                    <span class="back-arrow">&lt;</span>
+                    <span class="chat-name">おでかけグループ (3)</span>
+                    <div class="header-icons">
+                        <span>🔍</span>
+                        <span>📞</span>
+                        <span>≡</span>
+                    </div>
+                </header>
+
+                <main class="chat-area" id="chat-area">
+                    <div class="date-separator">今日</div>
+
+                    <!-- 初期メッセージの例 (グループトーク風) -->
+                    <div class="message-container partner">
+                        <div class="avatar saori"></div>
+                        <div class="message-content">
+                            <span class="partner-name">saori</span>
+                            <div class="bubble-wrapper">
+                                <div class="message-bubble">
+                                    <p>@All 今度みんなでランチ行こう！</p>
+                                </div>
+                                <span class="timestamp">17:16</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-container partner">
+                        <div class="avatar aya"></div>
+                        <div class="message-content">
+                            <span class="partner-name">aya</span>
+                             <div class="bubble-wrapper">
+                                <div class="message-bubble">
+                                    <p>いいね！</p>
+                                </div>
+                                <span class="timestamp">17:19</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                <footer class="chat-footer">
+                    <span class="icon">+</span>
+                    <span class="icon">📷</span>
+                    <span class="icon">🖼️</span>
+                    <div class="text-input-mock">Aa</div>
+                    <span class="icon">🙂</span>
+                    <span class="icon">🎤</span>
+                </footer>
+            </div>
+            <!-- ホームバー -->
+            <div class="home-bar"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
