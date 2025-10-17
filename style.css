@@ -283,6 +283,7 @@ input:checked+.slider:before {
 .message-bubble p {
     margin: 0;
     line-height: 1.4;
+    text-align: left;
 }
 
 .partner .message-bubble::before {
